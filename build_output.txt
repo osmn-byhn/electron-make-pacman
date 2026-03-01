@@ -1,0 +1,4 @@
+src/MakerPacman.ts(1,21): error TS1484: 'MakerOptions' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/MakerPacman.ts(2,10): error TS1484: 'ForgePlatform' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/MakerPacman.ts(11,42): error TS2507: Type 'typeof import("/home/shiyakami/Libraries/electron-make-pacman/node_modules/@electron-forge/maker-base/dist/Maker")' is not a constructor function type.
+src/MakerPacman.ts(28,20): error TS2339: Property 'config' does not exist on type 'MakerPacman'.

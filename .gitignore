@@ -1,0 +1,9 @@
+node_modules/
+dist/
+out/
+test-app/
+.DS_Store
+*.log
+*.tar.gz
+*.pkg.tar.zst
+*.pkg.tar.xz

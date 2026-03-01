@@ -1,0 +1,59 @@
+{
+  "name": "electron-make-pacman",
+  "version": "1.0.0",
+  "description": "Electron Forge pacman package maker",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./cli": {
+      "import": "./dist/cli.mjs",
+      "require": "./dist/cli.js",
+      "types": "./dist/cli.d.ts"
+    }
+  },
+  "bin": {
+    "electron-make-pacman": "./dist/cli.js"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shiyakami/electron-make-pacman.git"
+  },
+  "keywords": [
+    "electron",
+    "electron-forge",
+    "maker",
+    "pacman",
+    "archlinux"
+  ],
+  "author": "shiyakami",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.3.2",
+    "prettier": "^3.8.1",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@electron-forge/maker-base": "^7.11.1",
+    "@electron-forge/shared-types": "^7.11.1",
+    "pino": "^10.3.1",
+    "pino-pretty": "^13.1.3"
+  }
+}
